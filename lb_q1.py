@@ -48,7 +48,7 @@ from pyflink.datastream.window import TumblingEventTimeWindows
 # 初始化Flink环境
 env = StreamExecutionEnvironment.get_execution_environment()
 
-# 配置Kafka消费者（来源：搜索）
+# 配置Kafka消费者
 kafka_source = KafkaSource.builder()
     .set_bootstrap_servers("kafka-broker:9092")
     .set_topics("user_online_time", "payment_events")
